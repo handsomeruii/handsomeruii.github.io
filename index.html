@@ -92,6 +92,17 @@
 #about .timeline>div{padding-block:17px}
 #about .skills{margin-top:22px}
 @media(max-width:750px){#about{grid-template-columns:1fr;gap:24px;padding-block:30px}#about .about-heading{grid-column:auto}#about h2{font-size:34px}#about .about-photo{aspect-ratio:4 / 3}#about p{font-size:15px}}
+
+/* Spread the About columns and align their top and bottom edges. */
+#about{max-width:none;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);column-gap:80px;align-items:stretch}
+#about .about-visual{min-height:460px}
+#about .about-photo{height:100%;aspect-ratio:auto;min-height:460px}
+#about>div:last-child{display:flex;flex-direction:column}
+#about>div:last-child>p{margin-bottom:20px}
+#about .timeline{margin-top:auto}
+#about .skills{margin-top:26px}
+@media(min-width:1600px){#about .about-visual{min-height:520px}}
+@media(max-width:750px){#about{column-gap:0}#about .about-visual{min-height:0}#about .about-photo{height:auto;min-height:0;aspect-ratio:4 / 3}#about .timeline{margin-top:20px}}
 </style></head><body><header><a class="brand" href="#">rui<span>.</span></a><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#journal">Journal</a><a href="#contact">Contact</a></nav><div class="status"><i class="dot"></i>MADRID / CHINA</div></header><main><section class="hero"><div><div class="eyebrow">Architecture · Urbanism · Observation</div><h1>Space, people,<br>and <em>possibility.</em></h1></div><div class="hero-side">Architecture begins with everyday life. Through careful observation of people and place, I seek to create spaces that support daily life, invite connection, and respond to their surroundings.<br><a href="#work">Explore selected work <span aria-hidden="true">↘</span></a></div></section>
 <div class="hero-art carousel" role="region" aria-roledescription="carousel" aria-label="Selected project renderings" tabindex="0"><div id="hero-slides"><div class="hero-slide" data-slide="0"><img src="a4aa68057599e335.jpg" alt="The Healing State — architectural rendering" fetchpriority="high"><span class="art-tag">GRADUATION DESIGN / 2024</span></div><div class="hero-slide" data-slide="1" hidden><img src="7e2da0ebfad354f0.webp" alt="A Floating Market — architectural rendering" loading="lazy"><span class="art-tag">COMPETITION DESIGN / 2021</span></div></div><button class="slide-arrow previous" aria-label="Previous project rendering">‹</button><button class="slide-arrow next" aria-label="Next project rendering">›</button><div class="slide-controls"><span id="slide-name">The Healing State</span><div class="slide-dots"><button aria-label="Show The Healing State" aria-pressed="true" data-go="0"></button><button aria-label="Show A Floating Market" aria-pressed="false" data-go="1"></button></div><span id="slide-counter" aria-live="polite" aria-atomic="true">01 / 02</span></div></div><div class="caption"><span>SELECTED ACADEMIC DESIGNS</span><span>PORTFOLIO / 2026</span></div>
 <section class="section" id="work"><div class="section-head"><div><div class="eyebrow">01 / Selected work</div><h2>Spaces for everyday life.</h2></div><div class="filters" role="group" aria-label="Filter projects"><span class="eyebrow">02 Selected projects / 2021–2024</span></div></div><div class="projects" id="projects"></div></section>
